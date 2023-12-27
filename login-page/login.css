@@ -1,0 +1,95 @@
+*{
+    font-family: system-ui;
+        font-weight: 700;
+}
+
+body{
+    background-image: url(./img.jpg);
+    background-size: cover;
+}
+
+.LogIn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.login-border{
+    backdrop-filter: blur(10px);
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30px;
+    position: absolute;
+    width: 400px;
+    height: 450px;  
+}
+.logintxt{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 100px;
+    width: 400px;
+    border-radius: 30px;
+    font-size: 40px;
+    color: rgb(12, 12, 12);
+}
+input{
+    background: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    outline: none;
+    margin-top: 180px;
+    position: absolute;
+    width: 320px;
+    height: 40px;
+    padding: 0 30px 0  5px;
+    font-size: 1.1rem;
+}
+
+.icon{position: absolute;
+    font-size: 18px;
+    margin-top: 195px;
+    margin-left: 330px;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+
+}
+a{
+    position: absolute;
+    bottom: 50px;
+    left: 155px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(19, 125, 152);
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+   .login-border{
+    margin-top: -80px;
+    width: 310px;
+    height: 450px;  
+   }
+   input{
+    width: 220px;
+    height: 40px;
+   }
+   a{
+    left: 105px;
+   }
+   .icon{
+    opacity: 0;
+   }
+  }

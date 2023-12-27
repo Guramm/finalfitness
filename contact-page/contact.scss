@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Gilda+Display&family=Karla:wght@700&family=Merriweather&family=Noto+Sans+Georgian&family=Outfit:wght@600&family=Poppins:wght@300;400&family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
+
+$icon-color: rgba(119, 125, 89, 1);
+$icon-size: 18px;
+$hover-color: rgba(171, 29, 70, 1);
+
+body {
+  background-color: rgba(255, 255, 255, 1);
+}
+.header {
+  width: 1240px;
+  height: 128px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  gap: 783px;
+  .logo {
+    background-image: url(./images/img1.png);
+    width: 120px;
+    height: 26.86px;
+    top: 4.57px;
+    padding: 8px, 0px, 8px, 0px;
+    gap: 10px;
+    background-size: cover;
+  }
+  .search-container {
+    height: 52px;
+    width: 420px;
+    position: absolute;
+    right: 1px;
+    display: flex;
+    top: 1px;
+    gap: 24px;
+    align-items: center;
+    input {
+      width: 196px;
+      height: 22px;
+      background: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      border-top: transparent;
+      border-bottom: 1px solid $icon-color;
+      outline: none;
+      position: absolute;
+      padding: 0 30px 0 5px;
+      font-size: 1.1rem;
+      color: black;
+      top: 15px;
+    }
+    button {
+      background-color: transparent;
+      border: transparent;
+      margin-left: 200px;
+      padding: 4px;
+      height: 42px;
+      width: 32px;
+      font-size: $icon-size;
+      cursor: pointer;
+      z-index: 2;
+      color: $hover-color;
+      transition: 1s;
+    }
+    .heart {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+    .heart:hover {
+      color: black;
+      cursor: pointer;
+    }
+    .man {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+
+    .man:hover {
+      color: $icon-color;
+      cursor: pointer;
+    }
+    .cart {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+    .cart:hover {
+      color: $hover-color;
+      cursor: pointer;
+    }
+    .GE {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+  }
+
+  .navigation-parent {
+    display: flex;
+    justify-content: center;
+
+    .navigation {
+      width: 820px;
+      height: 32px;
+      position: absolute;
+      top: 76px;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      a {
+        color: rgba(0, 0, 0, 1);
+        font-family: Gilda Display;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: $hover-color;
+      }
+    }
+}}
+
+.title-container{
+    margin-top: 250px;
+    font-family: sans-serif;
+    font-size: 24px;
+    display: grid;
+    gap: 15px;
+    
+}
+
+.map-container{
+    position: absolute;
+    right: 30px;
+    top: 160px;
+    .map{
+        border-radius: 10px;
+        height: 450px;
+        width: 650px;
+        background-image: url(./images/img2.avif);
+        background-size: cover;
+        cursor: pointer;
+    }
+}
+
+
+.footer {
+    .footer-box {
+      position: absolute;
+      right: 0;
+      width: 1540px;
+      height: 320px;
+      top: 722px;
+      right: -180px;
+      background-color: rgba(201, 203, 189, 1);
+      .footer-logo {
+        position: absolute;
+        width: 257px;
+        height: 57px;
+        top: 57px;
+        left: 100px;
+        background-image: url(./images/img1.png);
+        background-size: cover;
+      }
+      .help-container {
+        position: absolute;
+        width: 75px;
+        height: 132px;
+        top: 57.07px;
+        left: 508px;
+      }
+      h3 {
+        font-family: Gilda Display;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(14, 16, 32, 1);
+      }
+      .line {
+        width: 68px;
+        top: 89.07px;
+        left: 508px;
+        border: 0.5px rgba(0, 0, 0, 1) solid;
+      }
+      p {
+        font-family: Gilda Display;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        cursor: pointer;
+      }
+      p:hover{
+        color: $hover-color;
+      }
+      .explore-container {
+        position: absolute;
+        width: 104px;
+        height: 176px;
+        top: 57px;
+        left: 696px;
+  
+        .line {
+          width: 104px;
+        }
+      }
+      .account-container {
+        position: absolute;
+        width: 80px;
+        height: 88.07px;
+        top: 57px;
+        left: 920px;
+  
+        .line {
+          width: 80px;
+        }
+      }
+      .follow-us-container {
+        position: absolute;
+        width: 120px;
+        height: 72.55px;
+        top: 57px;
+        left: 1120px;
+       
+  
+        p{
+          font-size: 24px;
+          
+        }
+        .p-parent{
+          display: flex;
+          gap: 20px;
+        }
+      }
+  
+    }
+  }
+  

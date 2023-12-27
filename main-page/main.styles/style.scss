@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Gilda+Display&family=Karla:wght@700&family=Merriweather&family=Noto+Sans+Georgian&family=Outfit:wght@600&family=Poppins:wght@300;400&family=Roboto&family=Roboto+Condensed:ital@1&display=swap");
+
+$icon-color: rgba(119, 125, 89, 1);
+$icon-size: 18px;
+$hover-color: rgba(171, 29, 70, 1);
+
+body {
+  background-color: rgba(255, 255, 255, 1);
+}
+.header {
+  width: 1240px;
+  height: 128px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  gap: 783px;
+  .logo {
+    background-image: url(../images/img1.png);
+    width: 120px;
+    height: 26.86px;
+    top: 4.57px;
+    padding: 8px, 0px, 8px, 0px;
+    gap: 10px;
+    background-size: cover;
+  }
+  .search-container {
+    height: 52px;
+    width: 420px;
+    position: absolute;
+    right: 1px;
+    display: flex;
+    top: 1px;
+    gap: 24px;
+    align-items: center;
+    input {
+      width: 196px;
+      height: 22px;
+      background: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      border-top: transparent;
+      border-bottom: 1px solid $icon-color;
+      outline: none;
+      position: absolute;
+      padding: 0 30px 0 5px;
+      font-size: 1.1rem;
+      color: black;
+      top: 15px;
+    }
+    button {
+      background-color: transparent;
+      border: transparent;
+      margin-left: 200px;
+      padding: 4px;
+      height: 42px;
+      width: 32px;
+      font-size: $icon-size;
+      cursor: pointer;
+      z-index: 2;
+      color: $hover-color;
+      transition: 1s;
+    }
+    .heart {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+    .heart:hover {
+      color: black;
+      cursor: pointer;
+    }
+    .man {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+
+    .man:hover {
+      color: $icon-color;
+      cursor: pointer;
+    }
+    .cart {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+    .cart:hover {
+      color: $hover-color;
+      cursor: pointer;
+    }
+    .GE {
+      font-size: $icon-size;
+      color: $icon-color;
+    }
+    .burger {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  .navigation-parent {
+    display: flex;
+    justify-content: center;
+
+    .navigation {
+      width: 820px;
+      height: 32px;
+      position: absolute;
+      top: 76px;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      a {
+        color: rgba(0, 0, 0, 1);
+        font-family: Gilda Display;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: $hover-color;
+      }
+    }
+  }
+  .cover-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cover-img {
+      position: absolute;
+      width: 1600px;
+      height: 840px;
+      top: 122px;
+      background-color: black;
+
+      background-image: url(../images/img2.jpg);
+      background-size: cover;
+      background-color: black;
+
+      .title-box {
+        position: absolute;
+        width: 447px;
+        height: 104px;
+        top: 132px;
+        left: 913px;
+
+        .first {
+          color: $hover-color;
+          font-size: 700;
+        }
+        .second {
+          margin-top: 10px;
+          color: $icon-color;
+          font-family: Gilda Display;
+          font-size: 56px;
+          font-weight: 700;
+          line-height: 64px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .shop {
+        position: absolute;
+        width: 123px;
+        height: 48px;
+        top: 284px;
+        left: 913px;
+        padding: 12px, 16px, 12px, 16px;
+        border-radius: 4px;
+        gap: 10px;
+        background-color: $icon-color;
+        transition: 0.5s;
+        border: 2px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .shop-text {
+          font-family: Gilda Display;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: white;
+        }
+      }
+      .shop:hover {
+        background-color: white;
+        border: solid 2px $hover-color;
+
+        .shop-text {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+.middle {
+  .chose {
+    position: absolute;
+    width: 397px;
+    height: 48px;
+    top: 1088px;
+    left: 100px;
+
+    p {
+      font-family: Gilda Display;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+  }
+
+  .container {
+    max-width: 1296px;
+    width: 95%;
+    margin-top: 1176px;
+    margin-left: 100px;
+  }
+
+  .slider-wrapper {
+    position: relative;
+  }
+
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+  .middle-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .middle-image {
+      position: absolute;
+      width: 1600px;
+      height: 840px;
+      top: 1688px;
+      background-color: black;
+      right: 0px;
+      background-image: url(../images/img9.jpg);
+      background-size: cover;
+      background-color: black;
+      opacity: 0.8;
+      transition: 1s;
+    }
+    .middle-image:hover {
+      opacity: 1;
+    }
+    .middle-title-box {
+      position: absolute;
+      width: 705px;
+      height: 104px;
+      top: 150px;
+      left: 200px;
+
+      .middle-first {
+        color: $hover-color;
+        font-size: 700;
+      }
+      .middle-second {
+        margin-top: 10px;
+        color: $icon-color;
+        font-family: Gilda Display;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .middle-shop {
+      position: absolute;
+      width: 123px;
+      height: 48px;
+      top: 300px;
+      left: 200px;
+      padding: 12px, 16px, 12px, 16px;
+      border-radius: 4px;
+      gap: 10px;
+      background-color: $icon-color;
+      transition: 0.5s;
+      border: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .middle-shop-text {
+        font-family: Gilda Display;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+      }
+    }
+    .middle-shop:hover {
+      background-color: white;
+      border: solid 2px $hover-color;
+
+      .middle-shop-text {
+        color: $hover-color;
+      }
+    }
+  }
+  .design-box-parent {
+    display: flex;
+    justify-content: center;
+    .design-box {
+      height: 520px;
+      width: 1200px;
+      position: absolute;
+      top: 2582px;
+      display: flex;
+
+      gap: 15px;
+      .design-main-img {
+        height: 520px;
+        width: 610px;
+        background-image: url(../images/img10.jpg);
+        background-size: cover;
+      }
+      .design-box-text {
+        width: 295px;
+        height: 176px;
+        background-color: $icon-color;
+
+        p {
+          font-family: Gilda Display;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(243, 244, 248, 1);
+          width: 193px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+      .design-img2 {
+        width: 295px;
+        height: 330px;
+        background-image: url(../images/img11.jpg);
+        background-size: cover;
+        margin-top: 190px;
+        margin-left: -300px;
+      }
+      .design-img3 {
+        width: 295px;
+        height: 324px;
+        background-image: url(../images/img12.jpg);
+        background-size: cover;
+      }
+      .design-box-text2 {
+        width: 285px;
+        height: 176px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-color: $icon-color;
+
+        p {
+          font-family: Gilda Display;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(243, 244, 248, 1);
+          width: 198px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+      .design-box-text2:hover {
+        background-color: rgba(188, 74, 107, 1);
+      }
+      .design-box-text:hover {
+        background-color: rgba(188, 74, 107, 1);
+      }
+    }
+  }
+  .up-parent {
+    display: flex;
+    justify-content: center;
+    .up {
+      position: absolute;
+      top: 3138px;
+      font-size: 52px;
+      text-decoration: none;
+      color: $icon-color;
+      transition: 1s;
+      animation: animate 1s infinite ease-in;
+    }
+
+    @keyframes animate {
+      0% {
+        top: 3128px;
+      }
+      25% {
+        top: 3118px;
+      }
+      50% {
+        top: 3128px;
+      }
+
+      75% {
+        top: 3138;
+      }
+    }
+    .up:hover {
+      color: $hover-color;
+      font-size: 62px;
+    }
+  }
+}
+.footer {
+  .footer-box {
+    position: absolute;
+    right: 0;
+    width: 1540px;
+    height: 320px;
+    top: 3222px;
+    background-color: rgba(201, 203, 189, 1);
+    .footer-logo {
+      position: absolute;
+      width: 257px;
+      height: 57px;
+      top: 57px;
+      left: 100px;
+      background-image: url(../images/img1.png);
+      background-size: cover;
+    }
+    .help-container {
+      position: absolute;
+      width: 75px;
+      height: 132px;
+      top: 57.07px;
+      left: 508px;
+    }
+    h3 {
+      font-family: Gilda Display;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(14, 16, 32, 1);
+    }
+    .line {
+      width: 68px;
+      top: 89.07px;
+      left: 508px;
+      border: 0.5px rgba(0, 0, 0, 1) solid;
+    }
+    p {
+      font-family: Gilda Display;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      cursor: pointer;
+    }
+    p:hover {
+      color: $hover-color;
+    }
+    .explore-container {
+      position: absolute;
+      width: 104px;
+      height: 176px;
+      top: 57px;
+      left: 696px;
+
+      .line {
+        width: 104px;
+      }
+    }
+    .account-container {
+      position: absolute;
+      width: 80px;
+      height: 88.07px;
+      top: 57px;
+      left: 920px;
+
+      .line {
+        width: 80px;
+      }
+    }
+    .follow-us-container {
+      position: absolute;
+      width: 120px;
+      height: 72.55px;
+      top: 57px;
+      left: 1120px;
+
+      p {
+        font-size: 24px;
+      }
+      .p-parent {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+$breakpoint-phone: 340px;
+@media (max-width: $breakpoint-phone) {
+  .header {
+    width: 320px;
+    height: 70px;
+    top: 22px;
+    left: 20px;
+    .logo {
+      width: 120px;
+      height: 26px;
+    }
+    .search-container {
+      top: 46px;
+      left: 106px;
+      button {
+        position: absolute;
+        left: -50px;
+      }
+
+      input {
+        width: 144px;
+        height: 24px;
+      }
+      .cart {
+        position: absolute;
+
+        top: -48px;
+        left: 110px;
+        padding: 10px;
+        gap: 10px;
+      }
+      .GE {
+        position: absolute;
+
+        top: -48px;
+        left: 150px;
+        padding: 10px;
+        gap: 10px;
+      }
+      .heart {
+        opacity: 0;
+      }
+      .man {
+        opacity: 0;
+      }
+      .burger {
+        position: absolute;
+        font-size: 24px;
+        padding: 10px;
+        opacity: 1;
+        display: block;
+        color: $icon-color;
+        left: -120px;
+      }
+    }
+    .navigation-parent {
+      .navigation {
+        display: none;
+      }
+    }
+    .cover-img-container {
+      .cover-img {
+        position: absolute;
+        width: 360px;
+        height: 488px;
+        top: 124px;
+        left: -60px;
+        border: 1px;
+        .title-box {
+          .first {
+            position: absolute;
+            width: 241px;
+            height: 24px;
+            top: 176px;
+            left: -860px;
+          }
+          .second {
+            position: absolute;
+            width: 241px;
+            height: 24px;
+            top: 206px;
+            left: -860px;
+            font-family: Gilda Display;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .shop {
+          width: Fixed (112px);
+          height: Fixed (32px);
+          top: 396px;
+          left: 50px;
+          padding: 12px, 16px, 12px, 16px;
+          border-radius: 4px;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
